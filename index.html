@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;  /* 添加此行，使内容垂直排列 */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -16,9 +17,14 @@
         #clock {
             font-size: 2em;
         }
+        #title {  /* 添加标题的样式 */
+            margin-bottom: 20px;  /* 为标题下方添加一些空间 */
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
+    <div id="title">JChunter Hello Word</div>  <!-- 添加标题内容 -->
     <div id="clock"></div>
 
     <script>
